@@ -11,16 +11,21 @@ module.exports = {
         mont: ['var(--font-mont)', ...fontFamily.sans],
       },
       colors: {
-        dark: "#283618",//"#1b1b1b",
+        dark: "#1b1b1b",//"#1b1b1b",
         light: "#FEFAE0", //"#f5f5f5",
-        primary: "#B63E96", // 240,86,199
-        primaryDark: "#58E6D9", // 80,230,217     
+        cream: "#FEFAE0",
+        darkGreen: "#283618",
+        lightGreen: "#597835",
         mediumBrown: "#BC6C25",
         lightBrown:  "#DDA15E",
         lightBlue:  "#CBEEF3",
+        mediumBlue: "#5DB7C1"
         },
       animation: {
         'spin-slow': 'spin 60s linear infinite',
+      },
+      backgroundImage: {
+        circularLight: 'repeating-radial-gradient(#5DB7C1 2px, #0000 5px 100px);'
       }  
     },
   },

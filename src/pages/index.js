@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import Image from "next/image";
+import Head from "next/head";
 import profileImage from "../../public/profileImage.png";
 import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
@@ -9,6 +10,10 @@ import HireMe from "@/components/HireMe";
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>Grace Reed | Home</title>
+        <meta title="A Bit About Me" content="About Page" />
+      </Head>
       <main className="flex items-center text-dark w-full min-h-screen">
         <Layout className="pt-0">
           <div className="flex items-center justify-between w-full">
