@@ -1,10 +1,11 @@
 import Layout from "@/components/Layout";
 import Image from "next/image";
 import Head from "next/head";
+
 import profileImage from "../../public/profileImage.png";
 import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
-import { LinkArrow } from "@/styles/icons";
+import { DownloadResume, LinkArrow } from "@/styles/icons";
 import HireMe from "@/components/HireMe";
 
 export default function Home() {
@@ -27,13 +28,13 @@ export default function Home() {
               />
               <div className="flex items-center self-start mt-2">
                 <Link
-                  href={"/profileImage.png"}
+                  href={"/Grace Reed Resume 2024.pdf"}
                   target="_blank"
                   className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark"
                   download={true}
                 >
                   Resume
-                  <LinkArrow className={"ml-1 w-6"} />
+                  <DownloadResume className={"ml-1 w-5"} />
                 </Link>
                 <Link
                   href={"mailto:gmx.butler@gmail.com"}
