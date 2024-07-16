@@ -56,7 +56,7 @@ const about = () => {
               <Image
                 src={profileImage}
                 alt="Grace Reed"
-                className="w-full h-auto rounded-2xl"
+                className="w-full h-auto rounded-2xl items-center"
               />
             </div>
             <div className="col-span-2 flex flex-col items-end justify-between">
@@ -87,6 +87,7 @@ const about = () => {
             </div>
           </div>
           <Skills />
+          <div className="flex flex-col items-start">
           <AboutDetails
             sectionName="Experience"
             details={[
@@ -173,10 +174,11 @@ const about = () => {
               </div>,
             ]}
           />
+          </div>
           <AboutDetails
             sectionName="Education"
             details={[
-              <div>
+                <div>
                 <Details
                   title={"Certificate, Full Stack Web Development"}
                   organization={"Southern Methodist University"}

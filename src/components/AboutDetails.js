@@ -76,7 +76,7 @@ export const AboutDetails = ({ sectionName, details }) => {
   });
 
   return (
-    <div className="my-64">
+    <div className="my-32">
       <h2 className="font-bold text-8xl text-center w-full mb-32">
         {sectionName}
       </h2>
@@ -86,7 +86,7 @@ export const AboutDetails = ({ sectionName, details }) => {
           className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top"
           style={{ scaleY: scrollYProgress }}
         />
-        <ul className="w-full flex flex-col items-start justify-between ml-4">
+        <ul className="w-full flex flex-col items-start justify-between">
           {details}
         </ul>
       </div>
