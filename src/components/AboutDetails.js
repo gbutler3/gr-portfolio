@@ -21,7 +21,7 @@ export const Details = ({
   return (
     <li
       ref={ref}
-      className={`my-8 first:mt-0 last:mb-0 w-[${width}%] mx-auto flex flex-col items-center justify-between`}>
+      className={`my-8 first:mt-0 last:mb-0 mx-auto flex flex-col items-center justify-between`} style={{width: "50%"}}>
       <ListIcon reference={ref} />
       <motion.div
         initial={{ y: 50 }}

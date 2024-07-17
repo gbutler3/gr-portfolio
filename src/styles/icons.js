@@ -422,11 +422,11 @@ export const DownloadResume = ({ className, fill = "#000000", ...rest }) => (
     {...rest}
     className={`w-full h-auto ${className}`}
   >
-    <g id="SVGRepo_bgCarrier" stroke-width="0" stroke="currentColor"></g>
+    <g id="SVGRepo_bgCarrier" strokeWidth={"0"} stroke="currentColor"></g>
     <g
       id="SVGRepo_tracerCarrier"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeLinecap="round"
+      strokeLinejoin="round"
       stroke="currentColor"
     ></g>
     <g id="SVGRepo_iconCarrier">
