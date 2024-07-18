@@ -12,10 +12,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Grace Reed | Home</title>
+        <title>Grace Reed | A Bit About Me</title>
         <meta title="A Bit About Me" content="About Page" />
       </Head>
-      <main className="flex items-center text-dark w-full min-h-screen">
+      <main className="flex items-center w-full min-h-screen dark:text-light">
         <Layout className="pt-0">
           <div className="flex items-center justify-between w-full">
             <div className="w-1/2 flex flex-col items-center self-center justify-around" style={{marginTop: '-15em'}}>
@@ -30,7 +30,8 @@ export default function Home() {
                 <Link
                   href={"/Grace Reed Resume"}
                   target="_blank"
-                  className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark"
+                  className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark dark:border
+                   dark:bg-light dark:text-dark dark:hover:bg-dark dark:hover:border dark:hover:border-light dark:hover:text-light"
                   download={true}
                 >
                   Resume
@@ -39,7 +40,7 @@ export default function Home() {
                 <Link
                   href={"mailto:gmx.butler@gmail.com"}
                   target="_blank"
-                  className="ml-4 text-lg font-medium capitalize text-dark underline"
+                  className="ml-4 text-lg font-medium capitalize text-dark underline underline-offset-4 dark:text-light"
                 >
                   Contact
                 </Link>

@@ -29,7 +29,7 @@ const AnimatedNumbers = ({ value }) => {
     });
   }, [springValue, value]);
 
-  return <span ref={ref}></span>;
+  return <span ref={ref} className="dark:text-light"></span>;
 };
 
 const about = () => {
@@ -42,7 +42,7 @@ const about = () => {
       <main className="flex  w-full  flex-col items-center justify-center">
         <Layout className="pt-16">
           <AnimatedText className="mb-16" text="A Bit About Me" />
-          <div className="grid w-full grid-cols-8 gap-16">
+          <div className="grid w-full grid-cols-8 gap-16  dark:text-light">
             <div className="col-span-3 flex flex-col items-start justify-start">
               <h2 className="mb-4 text-lg font-bold uppercase text-dark/75">
                 Biography
@@ -61,26 +61,26 @@ const about = () => {
             </div>
             <div className="col-span-2 flex flex-col items-end justify-between">
               <div className="flex flex-col items-end justify-center">
-                <span className="inline-block text-7xl font-bold">
+                <span className="inline-block text-7xl font-bold dark:text-light">
                   <AnimatedNumbers value={1} />+
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75">
+                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light">
                   Satisfied Clients
                 </h2>
               </div>
               <div className="flex flex-col items-end justify-center">
-                <span className="inline-block text-7xl font-bold">
+                <span className="inline-block text-7xl font-bold  dark:text-light">
                   <AnimatedNumbers value={3} />+
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75">
+                <h2 className="text-xl font-medium capitalize text-dark/75  dark:text-light">
                   Projects Completed
                 </h2>
               </div>
               <div className="flex flex-col items-end justify-center">
-                <span className="inline-block text-7xl font-bold">
+                <span className="inline-block text-7xl font-bold  dark:text-light">
                   <AnimatedNumbers value={3} />+
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75">
+                <h2 className="text-xl font-medium capitalize text-dark/75  dark:text-light">
                   Years of Experience
                 </h2>
               </div>
@@ -199,7 +199,7 @@ const about = () => {
                 />
                 <Details
                   for={"education"}
-                  title={"General Courses"}
+                  title={"Benedictine College - General Courses"}
                   organization={"Benedictine College"}
                   location={"Atchinson, KS"}
                   time={"2015-2017"}

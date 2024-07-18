@@ -12,7 +12,7 @@ const HireMe = () => {
           target="_blank"
           style={{ left: "7.2em", top: "5.2em"}}
           className="flex items-center justify-center absolute -translate-x-1/2 -translate-y-1/2 bg-lightBlue text-dark
-          shadow-md border broder-solid border-lightBlue w-28 h-28 rounded-full font-bold text-xl
+          shadow-md border broder-solid border-lightBlue w-28 h-28 rounded-full font-bold text-xl hover:bg-mediumBlue hover:border-mediumBlue dark:bg-mediumBlue dark:border-mediumBlue dark:hover:bg-lightBlue dark:hover:border-lightBlue
         " 
         >
           Hire Me

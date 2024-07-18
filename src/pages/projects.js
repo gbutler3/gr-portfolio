@@ -63,7 +63,7 @@ const projects = () => {
         <title>Grace Reed | Projects </title>
         <meta title="Projects" content="Projects Page" />
       </Head>
-      <main className="w-full mb-16 flex flex-col items-center justify-center">
+      <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">
         <Layout className="pt-16">
           <AnimatedText text={"Look What I Can Do"} className="mb-16"/>
           <div className="grid grid-cols-12 gap-24">

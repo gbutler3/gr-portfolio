@@ -77,16 +77,16 @@ export const AboutDetails = ({ sectionName, details }) => {
 
   return (
     <div className="my-32">
-      <h2 className="font-bold text-8xl text-center w-full mb-32">
+      <h2 className="font-bold text-8xl text-center w-full mb-32 dark:text-light">
         {sectionName}
       </h2>
       <div className="w-[75%] mx-auto relative">
         <motion.div
           ref={ref}
-          className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top"
+          className="absolute left-9 top-1 w-[4px] h-full bg-dark origin-top  dark:bg-light"
           style={{ scaleY: scrollYProgress }}
         />
-        <ul className="w-full flex flex-col items-start justify-between">
+        <ul className="w-full flex flex-col items-start justify-between  dark:text-light">
           {details}
         </ul>
       </div>
