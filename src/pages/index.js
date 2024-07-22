@@ -31,7 +31,7 @@ export default function Home() {
                   href={"/Grace Reed Resume"}
                   target="_blank"
                   className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark dark:border
-                   dark:bg-light dark:text-dark dark:hover:bg-dark dark:hover:border dark:hover:border-light dark:hover:text-light"
+                   dark:bg-dark dark:text-light  dark:hover:bg-light dark:hover:border dark:border-light dark:hover:text-dark"
                   download={true}
                 >
                   Resume
@@ -50,7 +50,7 @@ export default function Home() {
               <Image
                 src={profileImage}
                 alt="GraceReed"
-                className="w-10/12 h-auto"
+                className="w-10/12 h-auto bg-lightGreen dark:bg-mediumBlue rounded-full"
               />
             </div>
           </div>

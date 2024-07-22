@@ -26,7 +26,8 @@ module.exports = {
         'spin-slow': 'spin 60s linear infinite',
       },
       backgroundImage: {
-        circularLight: 'repeating-radial-gradient(#5DB7C1 2px, #0000 5px 100px);'
+        circularLight: 'repeating-radial-gradient(#5DB7C1 2px, #0000 5px 100px);',
+        circularDark: 'repeating-radial-gradient(#BC6C25 2px, #0000 5px 100px);'
       }  
     },
   },

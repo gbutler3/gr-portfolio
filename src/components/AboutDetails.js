@@ -34,7 +34,7 @@ export const Details = ({
             <a
               href={companyLink}
               target="_blank"
-              className="text-mediumBlue capitalize"
+              className=" text-mediumBlue dark:text-lightBrown capitalize"
             >
               {/*  className="text-mediumBlue capitalize bg-dark/95 rounded-full pb-1 px-2 font-normal" // TODO: for dark mode */}
               @{organization}
