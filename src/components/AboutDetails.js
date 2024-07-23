@@ -36,7 +36,6 @@ export const Details = ({
               target="_blank"
               className=" dark:text-pink-500 text-lightGreen capitalize"
             >
-              {/*  className="text-mediumBlue capitalize bg-dark/95 rounded-full pb-1 px-2 font-normal" // TODO: for dark mode */}
               @{organization}
             </a>
           : 

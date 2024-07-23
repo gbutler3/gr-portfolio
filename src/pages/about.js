@@ -29,7 +29,7 @@ const AnimatedNumbers = ({ value }) => {
     });
   }, [springValue, value]);
 
-  return <span ref={ref} className="dark:text-light"></span>;
+  return <span ref={ref} className="dark:text-light sm:text-xl"></span>;
 };
 
 const about = () => {
@@ -41,43 +41,107 @@ const about = () => {
       </Head>
       <main className="flex  w-full  flex-col items-center justify-center">
         <Layout className="pt-16">
-          <AnimatedText className="mb-16" text="A Bit About Me" />
-          <div className="grid w-full grid-cols-8 gap-16  dark:text-light">
-            <div className="col-span-4 flex flex-col items-start justify-start">
-              <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light">
+          <AnimatedText
+            className="mb-16 lg:!text-7xl sm:!text-6xl xs:text-4xl sm:mb-8"
+            text="A Bit About Me"
+          />
+          <div className="grid w-full grid-cols-8 gap-16  dark:text-light sm:gap-8">
+            <div className="col-span-4 flex flex-col items-start justify-start xl:col-span-8">
+              <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light  sm:text-md">
                 Professional Background
               </h2>
-              <p className="font-medium">My journey in began with a solid educational foundation in Health Studies from Texas Woman’s University, where I graduated summa cum laude in 2019. This academic background instilled in me a strong analytical mindset and an appreciation for meticulous problem-solving.</p>
-              <p className="my-4 font-medium">Starting out as an Executive Administrative Assistant at HealthTrackRx, I developed essential organizational and coordination skills by managing executive schedules and organizing major training events. This role taught me the value of attention to detail and adaptability, which became crucial as I transitioned into the role of Compliance Specialist. There, I focused on compliance monitoring and risk reduction, further enhancing my analytical and process-oriented skills.</p>
-              <p className="mb-4 font-medium">  To pivot into tech, I completed a Certificate in Full Stack Web Development from Southern Methodist University in 2020, marking the start of my career in web development.</p>
-              <p className="mb-4 font-medium">I moved into a more technical role at Shyft6 as a Systems Analyst/Developer. I was able to apply my growing tech skills to automate processes and develop applications using Zoho tools. This role deepened my understanding of project management and technology application in business contexts. My subsequent position as a Frontend Developer at Abra allowed me to fully immerse myself in web technologies. Utilizing React, Material UI, and Vite, I built and maintained web portals, developed an in-house UI library, and managed CI/CD pipelines. This experience was pivotal in showcasing my ability to thrive in a dynamic startup environment and apply technical knowledge to create impactful solutions.</p>
-              <p className="font-medium">I offer a unique blend of technical proficiency and real-world experience, having worked extensively with HTML, CSS, JavaScript, and modern frameworks like React and Flutter. My diverse background has equipped me with a versatile skill set and a proactive approach to problem-solving. I am now excited to leverage my experience and skills in a new role where I can continue to grow, contribute to innovative projects, and take on fresh challenges. I am actively seeking opportunities that will allow me to further develop my career and make a meaningful impact.</p>
+              <p className="font-medium  sm:text-base">
+                My journey in began with a solid educational foundation in
+                Health Studies from Texas Woman’s University, where I graduated
+                summa cum laude in 2019. This academic background instilled in
+                me a strong analytical mindset and an appreciation for
+                meticulous problem-solving.
+              </p>
+              <p className="my-4 font-medium  sm:text-base">
+                Starting out as an Executive Administrative Assistant at
+                HealthTrackRx, I developed essential organizational and
+                coordination skills by managing executive schedules and
+                organizing major training events. This role taught me the value
+                of attention to detail and adaptability, which became crucial as
+                I transitioned into the role of Compliance Specialist. There, I
+                focused on compliance monitoring and risk reduction, further
+                enhancing my analytical and process-oriented skills.
+              </p>
+              <p className="mb-4 font-medium  sm:text-base">
+                {" "}
+                To pivot into tech, I completed a Certificate in Full Stack Web
+                Development from Southern Methodist University in 2020, marking
+                the start of my career in web development.
+              </p>
+              <p className="mb-4 font-medium  sm:text-base">
+                I moved into a more technical role at Shyft6 as a Systems
+                Analyst/Developer. I was able to apply my growing tech skills to
+                automate processes and develop applications using Zoho tools.
+                This role deepened my understanding of project management and
+                technology application in business contexts. My subsequent
+                position as a Frontend Developer at Abra allowed me to fully
+                immerse myself in web technologies. Utilizing React, Material
+                UI, and Vite, I built and maintained web portals, developed an
+                in-house UI library, and managed CI/CD pipelines. This
+                experience was pivotal in showcasing my ability to thrive in a
+                dynamic startup environment and apply technical knowledge to
+                create impactful solutions.
+              </p>
+              <p className="font-medium  sm:text-base">
+                I offer a unique blend of technical proficiency and real-world
+                experience, having worked extensively with HTML, CSS,
+                JavaScript, and modern frameworks like React and Flutter. My
+                diverse background has equipped me with a versatile skill set
+                and a proactive approach to problem-solving. I am now excited to
+                leverage my experience and skills in a new role where I can
+                continue to grow, contribute to innovative projects, and take on
+                fresh challenges. I am actively seeking opportunities that will
+                allow me to further develop my career and make a meaningful
+                impact.
+              </p>
             </div>
-            <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-pink-300 p-8 dark:bg-lightBlue">
+
+            <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-pink-300 p-8 dark:bg-lightBlue xl:hidden">
               <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[102%] rounded-[2rem] bg-pink-700 dark:bg-mediumBlue" />
               <Image
                 src={secondaryProfileImage}
                 alt="Grace Reed"
                 className="w-full h-auto rounded-2xl items-center"
+                priority
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
-            <div className="col-span-1 flex flex-col items-start justify-start">
-              <div className="flex flex-col items-start justify-center mb-[10em]">
-                <span className="inline-block text-7xl font-bold dark:text-light">
+            <div className="col-span-1 flex flex-col items-start justify-start  xl:flex-row xl:col-span-full">
+            <div className=" flex-col relative items-start justify-center rounded-2xl border-2 border-solid border-dark bg-pink-300 p-8 dark:bg-lightBlue hidden xl:flex xl:mr-20">
+                <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[102%] rounded-[2rem] bg-pink-700 dark:bg-mediumBlue " />
+                <Image
+                  src={secondaryProfileImage}
+                  alt="Grace Reed"
+                  className="w-full h-auto rounded-2xl items-center "
+                  priority
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+              </div>
+              <div className="xl:flex xl:flex-col">
+              <div className="flex flex-col items-start justify-center mb-[10em] xl:w-1/2">
+                <span className="inline-block text-7xl font-bold dark:text-light sm:text-xl">
                   <AnimatedNumbers value={6} />+
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light">
+                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light  sm:text-base">
                   Projects Completed
                 </h2>
               </div>
               <div className="flex flex-col items-start justify-center">
-                <span className="inline-block text-7xl font-bold dark:text-light">
+                <span className="inline-block text-7xl font-bold dark:text-light sm:text-xl ">
                   <AnimatedNumbers value={3} />+
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light">
+                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light  sm:text-base">
                   Years of Experience
                 </h2>
               </div>
+              </div>
+             
+             
             </div>
           </div>
           <Skills />
@@ -102,7 +166,7 @@ const about = () => {
                       "- Optimized development and build processes by leveraging Vite to streamline development workflows and achieve faster build times across all three portals. Ensured efficient and scalable codebases, enhancing performance and maintainability.",
                       "- Managed CI/CD deployment pipelines by ensuring the configurations for all portals were functional and efficient, focusing on deploying applications to multiple environments, via Azure DevOps. Guaranteed reliable and consistent delivery of updates and new features.",
                       "- Fully created and developed Abra’s in-house UI library by designing reusable components, resulting in significant time and cost savings across multiple projects, a critical efficiency for a growing startup.",
-                      "- Contributed to the creation and maintenance of new features within the Abra mobile app for iOS and Android using Flutter, improving user experience and application performance."
+                      "- Contributed to the creation and maintenance of new features within the Abra mobile app for iOS and Android using Flutter, improving user experience and application performance.",
                     ]}
                   />
                   <Details

@@ -26,7 +26,7 @@ const FeaturedProject = ({ title, summary, image, link, github }) => {
         target="_blank"
         className="w-1/2 cursor-pointer overflow-hidden rounded-lg"
       >
-        <Image src={image} alt={title} className="w-full h-auto " />
+        <Image src={image} alt={title} className="w-full h-auto " priority sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"/>
       </Link>
       <div className="w-1/2 flex flex-col items-start justify-between pl-6">
         <Link
@@ -63,7 +63,7 @@ const Project = ({ type, title, summary, image, link, github }) => {
     <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark p-6 bg-light dark:bg-dark relative dark:border-lightBlue">
       <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-darkGreen rounded-br-3xl dark:bg-lightBlue" />
       <div className="w-full overflow-hidden rounded-lg">
-        <Image src={image} alt={title} className="w-full h-auto" />
+        <Image src={image} alt={title} className="w-full h-auto" priority sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"  />
       </div>
       <div className="w-full flex flex-col items-start justify-between mt-4">
         <span className=" text-lightGreen dark:text-mediumBlue text-xl font-bold">
