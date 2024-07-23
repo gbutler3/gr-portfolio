@@ -45,7 +45,7 @@ const about = () => {
           <div className="grid w-full grid-cols-8 gap-16  dark:text-light">
             <div className="col-span-4 flex flex-col items-start justify-start">
               <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light">
-                Professional Journey
+                Professional Background
               </h2>
               <p className="font-medium">My journey in began with a solid educational foundation in Health Studies from Texas Woman’s University, where I graduated summa cum laude in 2019. This academic background instilled in me a strong analytical mindset and an appreciation for meticulous problem-solving.</p>
               <p className="my-4 font-medium">Starting out as an Executive Administrative Assistant at HealthTrackRx, I developed essential organizational and coordination skills by managing executive schedules and organizing major training events. This role taught me the value of attention to detail and adaptability, which became crucial as I transitioned into the role of Compliance Specialist. There, I focused on compliance monitoring and risk reduction, further enhancing my analytical and process-oriented skills.</p>
