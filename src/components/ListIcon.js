@@ -9,23 +9,23 @@ const ListIcon = ({ reference }) => {
   });
 
   return (
-    <figure className="absolute left-0 stroke-dark dark:stroke-lightBrown">
+    <figure className="absolute left-0 dark:stroke-pink-700 stroke-lightGreen">
       <svg className="-rotate-90" width={75} height={75} viewBox="0 0 100 100">
         <circle
           cx={75}
           cy={50}
           r={20}
-          className="stroke-mediumBlue stroke-1 fill-none dark:stroke-lightBrown "
+          className="dark:stroke-pink-700 stroke-1 fill-none stroke-lightGreen "
         />
         <motion.circle
         ref={ref}
           cx={75}
           cy={50}
           r={20}
-          className="stroke-[3px] fill-mediumBlue dark:fill-dark"
+          className="stroke-[5px] dark:fill-pink-300 fill-light"
           style={{pathLength: scrollYProgress}}
         />
-        <circle cx={75} cy={50} r={10} className="stroke-1 fill-dark dark:fill-lightBrown" />
+        <circle cx={75} cy={50} r={10} className="stroke-1 dark:fill-dark fill-darkGreen" />
       </svg>
     </figure>
   );

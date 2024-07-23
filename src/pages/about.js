@@ -3,7 +3,7 @@ import AnimatedText from "@/components/AnimatedText";
 import Layout from "@/components/Layout";
 import Head from "next/head";
 import Image from "next/image";
-import profileImage from "../../public/profileImage.png";
+import secondaryProfileImage from "../../public/secondaryProfileImage.png";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
 import Skills from "@/components/Skills";
 import { Details, AboutDetails } from "@/components/AboutDetails";
@@ -29,7 +29,7 @@ const AnimatedNumbers = ({ value }) => {
     });
   }, [springValue, value]);
 
-  return <span ref={ref} className="dark:text-lightBrown"></span>;
+  return <span ref={ref} className="dark:text-light"></span>;
 };
 
 const about = () => {
@@ -43,36 +43,38 @@ const about = () => {
         <Layout className="pt-16">
           <AnimatedText className="mb-16" text="A Bit About Me" />
           <div className="grid w-full grid-cols-8 gap-16  dark:text-light">
-            <div className="col-span-3 flex flex-col items-start justify-start">
-              <h2 className="mb-4 text-lg font-bold uppercase text-dark/75">
-                Biography
+            <div className="col-span-4 flex flex-col items-start justify-start">
+              <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light">
+                Professional Journey
               </h2>
-              <p className="font-medium">paragrah 1</p>
-              <p className="my-4 font-medium">another paragrah</p>
-              <p className="font-medium">another paragrah</p>
+              <p className="font-medium">My journey in began with a solid educational foundation in Health Studies from Texas Woman’s University, where I graduated summa cum laude in 2019. This academic background instilled in me a strong analytical mindset and an appreciation for meticulous problem-solving.</p>
+              <p className="my-4 font-medium">Starting out as an Executive Administrative Assistant at HealthTrackRx, I developed essential organizational and coordination skills by managing executive schedules and organizing major training events. This role taught me the value of attention to detail and adaptability, which became crucial as I transitioned into the role of Compliance Specialist. There, I focused on compliance monitoring and risk reduction, further enhancing my analytical and process-oriented skills.</p>
+              <p className="mb-4 font-medium">  To pivot into tech, I completed a Certificate in Full Stack Web Development from Southern Methodist University in 2020, marking the start of my career in web development.</p>
+              <p className="mb-4 font-medium">I moved into a more technical role at Shyft6 as a Systems Analyst/Developer. I was able to apply my growing tech skills to automate processes and develop applications using Zoho tools. This role deepened my understanding of project management and technology application in business contexts. My subsequent position as a Frontend Developer at Abra allowed me to fully immerse myself in web technologies. Utilizing React, Material UI, and Vite, I built and maintained web portals, developed an in-house UI library, and managed CI/CD pipelines. This experience was pivotal in showcasing my ability to thrive in a dynamic startup environment and apply technical knowledge to create impactful solutions.</p>
+              <p className="font-medium">I offer a unique blend of technical proficiency and real-world experience, having worked extensively with HTML, CSS, JavaScript, and modern frameworks like React and Flutter. My diverse background has equipped me with a versatile skill set and a proactive approach to problem-solving. I am now excited to leverage my experience and skills in a new role where I can continue to grow, contribute to innovative projects, and take on fresh challenges. I am actively seeking opportunities that will allow me to further develop my career and make a meaningful impact.</p>
             </div>
-            <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-lightBlue p-8 dark:bg-lightBrown">
-              <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[102%] rounded-[2rem] bg-mediumBlue dark:bg-mediumBrown" />
+            <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-pink-300 p-8 dark:bg-lightBlue">
+              <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[102%] rounded-[2rem] bg-pink-700 dark:bg-mediumBlue" />
               <Image
-                src={profileImage}
+                src={secondaryProfileImage}
                 alt="Grace Reed"
                 className="w-full h-auto rounded-2xl items-center"
               />
             </div>
-            <div className="col-span-2 flex flex-col items-end justify-start">
-              <div className="flex flex-col items-end justify-center mb-[10em]">
-                <span className="inline-block text-7xl font-bold  dark:text-lightBrown">
+            <div className="col-span-1 flex flex-col items-start justify-start">
+              <div className="flex flex-col items-start justify-center mb-[10em]">
+                <span className="inline-block text-7xl font-bold dark:text-light">
                   <AnimatedNumbers value={6} />+
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75  dark:text-mediumBrown">
+                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light">
                   Projects Completed
                 </h2>
               </div>
-              <div className="flex flex-col items-end justify-center">
-                <span className="inline-block text-7xl font-bold  dark:text-lightBrown">
+              <div className="flex flex-col items-start justify-center">
+                <span className="inline-block text-7xl font-bold dark:text-light">
                   <AnimatedNumbers value={3} />+
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75  dark:text-mediumBrown">
+                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light">
                   Years of Experience
                 </h2>
               </div>
@@ -92,10 +94,15 @@ const about = () => {
                     location={"Orlando, FL (Remote)"}
                     time={"February 2022 - July 2024"}
                     details={[
-                      "- Contributed to development of 3 web portals; Admin, self-service, and talent portal. This included the creation, maintenance and addition of new features.",
-                      "- Contributed to the creation and maintenance of new features within the mobile app for iOS and Android using Flutter.",
-                      "- Fully created and developed Abra’s in-house UI library by creating reusable components, resulting in significant time and cost savings.",
-                      "- Proven ability to quickly adapt to new technologies and leverage them to achieve project goals.",
+                      // "- Contributed to development of 3 web portals; Admin, self-service, and talent portal. This included the creation, maintenance and addition of new features.",
+                      // "- Contributed to the creation and maintenance of new features within the mobile app for iOS and Android using Flutter.",
+                      // "- Fully created and developed Abra’s in-house UI library by creating reusable components, resulting in significant time and cost savings.",
+                      // "- Proven ability to quickly adapt to new technologies and leverage them to achieve project goals.",
+                      "- Utilized React and Material UI to create dynamic and responsive user interfaces for 3 web portals: Admin Portal, Self Service Portal, and Talent Portal. Collaborated with a designer to translate Figma designs into functional and aesthetically pleasing web components to improve user satisfaction and engagement in a fast-paced startup environment.",
+                      "- Optimized development and build processes by leveraging Vite to streamline development workflows and achieve faster build times across all three portals. Ensured efficient and scalable codebases, enhancing performance and maintainability.",
+                      "- Managed CI/CD deployment pipelines by ensuring the configurations for all portals were functional and efficient, focusing on deploying applications to multiple environments, via Azure DevOps. Guaranteed reliable and consistent delivery of updates and new features.",
+                      "- Fully created and developed Abra’s in-house UI library by designing reusable components, resulting in significant time and cost savings across multiple projects, a critical efficiency for a growing startup.",
+                      "- Contributed to the creation and maintenance of new features within the Abra mobile app for iOS and Android using Flutter, improving user experience and application performance."
                     ]}
                   />
                   <Details
