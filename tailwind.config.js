@@ -27,7 +27,15 @@ module.exports = {
       },
       backgroundImage: {
         circularLight: 'repeating-radial-gradient(#597835 2px, #0000 5px 100px);',
-        circularDark: 'repeating-radial-gradient(#5DB7C1 2px, #0000 5px 100px);'
+        circularDark: 'repeating-radial-gradient(#5DB7C1 2px, #0000 5px 100px);',
+        circularLightLg: 'repeating-radial-gradient(#597835 2px, #0000 5px 80px);',
+        circularDarkLg: 'repeating-radial-gradient(#5DB7C1 2px, #0000 5px 80);',
+
+        circularLightMd: 'repeating-radial-gradient(#597835 2px, #0000 5px 80px);',
+        circularDarkMd: 'repeating-radial-gradient(#5DB7C1 2px, #0000 5px 80);',
+
+        circularLightSm: 'repeating-radial-gradient(#597835 2px, #0000 5px 50px);',
+        circularDarkSm: 'repeating-radial-gradient(#5DB7C1 2px, #0000 5px 50px);',
       }  
     },
     screens: {

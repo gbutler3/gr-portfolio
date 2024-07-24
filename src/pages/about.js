@@ -267,7 +267,7 @@ const about = () => {
                   location={"Atchinson, KS"}
                   time={"2015-2017"}
                   details={[
-                    " - Studied Abroad in Florance, Italy, spring semester of 2016.",
+                    "- Studied Abroad in Florance, Italy, spring semester of 2016.",
                   ]}
                 />
               </div>,

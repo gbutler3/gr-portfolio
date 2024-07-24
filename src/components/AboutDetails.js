@@ -13,22 +13,18 @@ export const Details = ({
   width
 }) => {
   const ref = useRef(null);
-  const containerStyle = {
-    minWidth: '70ch',
-    marginLeft: companyLink === null || companyLink == undefined ? '14em' : undefined,
-  };
 
   return (
     <li
       ref={ref}
-      className={`my-8 first:mt-0 last:mb-0 mx-auto flex flex-col items-center justify-between`} style={{width: "50%"}}>
+      className={`my-8 first:mt-0 last:mb-0 mx-auto w-[50%] flex flex-col items-center justify-between md:w-[80%]`}>
       <ListIcon reference={ref} />
       <motion.div
         initial={{ y: 50 }}
         whileInView={{ y: 0 }}
         transition={{ duration: 1, type: "spring" }}
-        style={containerStyle}      >
-        <h3 className="capitalize font-bold text-2xl justify-center ">
+        className={`${companyLink === null || companyLink == undefined ? "ml-[14em] lg:ml-[8em] text-nowrap xs:ml-6 xs:text-wrap": undefined}`}     >
+        <h3 className={`capitalize font-bold text-2xl justify-start sm:text-lg xs:text-xl ${companyLink === null || companyLink === undefined ? "text-nowrap md:text-wrap" :"text-wrap"}`}>
           {title}&nbsp;
           {companyLink != null ? 
             <a
@@ -43,18 +39,18 @@ export const Details = ({
           }
         </h3>
         {companyLink === null || companyLink === undefined ? <>
-<span className="font-medium capitalize text-dark/75">
+<span className="font-medium capitalize text-dark/75 text-nowrap">
             {organization} <br/>
           </span>
         </>
          : 
           <></>
         }
-        <span className="font-medium capitalize text-dark/75">
+        <span className="font-medium capitalize text-dark/75 xs:text-sm">
           {time} | {location}
         </span>
         <br />
-        <span  className="font-medium w-full">
+        <span  className={`font-medium w-full md:text-sm ${companyLink === null || companyLink === undefined ? 'text-nowrap md:text-wrap' : 'text-wrap'}`}>
           {details.map((line, index) => (
             <React.Fragment key={index}>
               {line}
@@ -75,17 +71,17 @@ export const AboutDetails = ({ sectionName, details }) => {
   });
 
   return (
-    <div className="my-32">
-      <h2 className="font-bold text-8xl text-center w-full mb-32 dark:text-light">
+    <div className="my-64">
+      <h2 className="font-bold text-8xl text-center w-full mb-32 dark:text-light md:text-6xl md:mb-16 xs:text-4xl">
         {sectionName}
       </h2>
-      <div className="w-[75%] mx-auto relative">
+      <div className={`mx-auto relative ${sectionName === "Education" ? "w-[75%]" : "w-75% lg:w-[90%]" }`}>
         <motion.div
           ref={ref}
-          className="absolute left-9 top-1 w-[4px] h-full bg-dark origin-top  dark:bg-light"
+          className="absolute left-9 top-o w-[4px] h-full bg-dark origin-top  dark:bg-light md:w-[2px] md:left-[30px] xs:left-[20px]"
           style={{ scaleY: scrollYProgress }}
         />
-        <ul className="w-full flex flex-col items-start justify-between  dark:text-light">
+        <ul className="w-full flex flex-col items-start justify-between ml-4 dark:text-light">
           {details}
         </ul>
       </div>
