@@ -150,7 +150,7 @@ const about = () => {
             <AboutDetails
               sectionName="Experience"
               details={[
-                <div>
+                <div key="experience">
                   <Details
                     for={"experience"}
                     title={"Frontend Developer"}
@@ -242,7 +242,7 @@ const about = () => {
           <AboutDetails
             sectionName="Education"
             details={[
-              <div>
+              <div key={"education"}>
                 <Details
                   for={"education"}
                   title={"Certificate, Full Stack Web Development"}
