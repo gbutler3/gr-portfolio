@@ -7,6 +7,7 @@ import secondaryProfileImage from "../../public/secondaryProfileImage.png";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
 import Skills from "@/components/Skills";
 import { Details, AboutDetails } from "@/components/AboutDetails";
+import TransitionEffect from "@/components/TransitionEffect";
 
 const AnimatedNumbers = ({ value }) => {
   const ref = useRef(null);
@@ -39,6 +40,7 @@ const about = () => {
         <title>Grace Reed | A Bit About Me</title>
         <meta title="A Bit About Me" content="About Page" />
       </Head>
+      <TransitionEffect/>
       <main className="flex  w-full  flex-col items-center justify-center">
         <Layout className="pt-16">
           <AnimatedText

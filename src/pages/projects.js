@@ -15,6 +15,7 @@ import workoutProgress from "../../public/project_screen_shots/fitness tracker s
 import dayPlanner from "../../public/project_screen_shots/Workday scheduler screenShot.png";
 import noteTaker from "../../public/project_screen_shots/Note Taker screenshot.PNG";
 import { motion, AnimatePresence, wrap } from "framer-motion";
+import TransitionEffect from "@/components/TransitionEffect";
 
 const AbraProjectImages = [
   "/project_screen_shots/Abra/login.png",
@@ -74,6 +75,7 @@ const FeaturedProject = ({ title, summary, image, link, github }) => {
       <div className="relative w-1/2 overflow-hidden rounded-lg lg:w-full ">
         <AnimatePresence initial={false} custom={direction}>
           <motion.img
+            priority
             className={`h-full object-contain ${imageIndex > 6 ? "w-1/2 ml-[25%]": "w-full"}`}
             key={page}
             src={AbraProjectImages[imageIndex]}
@@ -202,6 +204,7 @@ const projects = () => {
         <title>Grace Reed | Projects </title>
         <meta title="Projects" content="Projects Page" />
       </Head>
+      <TransitionEffect/>
       <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">
         <Layout className="pt-16">
           <AnimatedText

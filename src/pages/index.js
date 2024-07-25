@@ -6,10 +6,9 @@ import Head from "next/head";
 import profileImage from "../../public/profileImage.png";
 import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
-import { DownloadResume, LinkArrow } from "@/styles/icons";
+import { DownloadResume } from "@/styles/icons";
 import HireMe from "@/components/HireMe";
-import { useRouter } from "next/router";
-
+import TransitionEffect from "@/components/TransitionEffect";
 export default function Home() {
   return (
     <>
@@ -17,6 +16,7 @@ export default function Home() {
         <title>Grace Reed | Home</title>
         <meta title="Grace Reed | Home" content="Home Page" />
       </Head>
+      <TransitionEffect/>
       <main className="flex items-center w-full min-h-screen dark:text-light sm:min-h-[80vh]">
         <Layout className="pt-0 lg:!flex lg:!flex-col md:pt-16 sm:pt-8">   
           <div className="flex items-center justify-between w-full lg:flex-col 3xl:!-mt-4 2xl:!-mt-4 xl:!-mt-4 lg:!-mt-4">
