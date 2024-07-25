@@ -29,7 +29,7 @@ const AnimatedNumbers = ({ value }) => {
     });
   }, [springValue, value]);
 
-  return <span ref={ref} className="dark:text-light sm:text-xl"></span>;
+  return <span ref={ref} className="dark:text-light sm:text-5xl"></span>;
 };
 
 const about = () => {
@@ -111,8 +111,9 @@ const about = () => {
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
-            <div className="col-span-1 flex flex-col items-start justify-start  xl:flex-row xl:col-span-full">
-            <div className=" flex-col relative items-start justify-center rounded-2xl border-2 border-solid border-dark bg-pink-300 p-8 dark:bg-lightBlue hidden xl:flex xl:mr-20">
+            <div className="col-span-1 flex flex-col items-start justify-start  xl:flex-row xl:col-span-full sm:flex-col">
+              <div className=" flex-col relative items-start justify-center rounded-2xl border-2 border-solid border-dark bg-pink-300 p-8 dark:bg-lightBlue hidden
+               xl:flex xl:mr-20  xl:w-full">
                 <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[102%] rounded-[2rem] bg-pink-700 dark:bg-mediumBlue " />
                 <Image
                   src={secondaryProfileImage}
@@ -122,26 +123,24 @@ const about = () => {
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </div>
-              <div className="xl:flex xl:flex-col">
-              <div className="flex flex-col items-start justify-center mb-[10em] xl:w-1/2">
-                <span className="inline-block text-7xl font-bold dark:text-light sm:text-xl">
-                  <AnimatedNumbers value={6} />+
-                </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light  sm:text-base">
-                  Projects Completed
-                </h2>
+              <div className="xl:flex xl:flex-col sm:flex-row sm:justify-between sm:mt-4">
+                <div className="flex flex-col items-start justify-center mb-[10em] xl:w-1/2 sm:mb-0 sm:mx-3">
+                  <span className="inline-block text-7xl font-bold dark:text-light  sm:text-5xl">
+                    <AnimatedNumbers value={6} />+
+                  </span>
+                  <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light sm:text-wrap  ">
+                    Projects Completed
+                  </h2>
+                </div>
+                <div className="flex flex-col items-start justify-center   sm:mb-0 sm:mx-3 sm:pt-3">
+                  <span className="inline-block text-7xl font-bold dark:text-light sm:text-5xl ">
+                    <AnimatedNumbers value={3} />+
+                  </span>
+                  <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light sm:text-wrap">
+                    Years of Experience
+                  </h2>
+                </div>
               </div>
-              <div className="flex flex-col items-start justify-center">
-                <span className="inline-block text-7xl font-bold dark:text-light sm:text-xl ">
-                  <AnimatedNumbers value={3} />+
-                </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light  sm:text-base">
-                  Years of Experience
-                </h2>
-              </div>
-              </div>
-             
-             
             </div>
           </div>
           <Skills />

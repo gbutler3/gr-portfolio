@@ -17,7 +17,7 @@ export default function Home() {
         <title>Grace Reed | Home</title>
         <meta title="Grace Reed | Home" content="Home Page" />
       </Head>
-      <main className="flex items-center w-full min-h-screen dark:text-light">
+      <main className="flex items-center w-full min-h-screen dark:text-light sm:min-h-[80vh]">
         <Layout className="pt-0 lg:!flex lg:!flex-col md:pt-16 sm:pt-8">   
           <div className="flex items-center justify-between w-full lg:flex-col 3xl:!-mt-4 2xl:!-mt-4 xl:!-mt-4 lg:!-mt-4">
           <Image
@@ -28,7 +28,7 @@ export default function Home() {
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw,"
             />
             <div
-              className="w-1/2 flex flex-col items-center self-center justify-around " >
+              className="w-1/2 flex flex-col items-center self-center justify-around lg:w-full" >
               <AnimatedText
                 text={"Hi, I'm Grace"}
                 className="!text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
@@ -59,7 +59,7 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            <div className="w-1/2 flex justify-end">
+            <div className="w-1/2 flex justify-end lg:w-full">
               <Image
                 src={profileImage}
                 alt="GraceReed"

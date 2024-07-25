@@ -24,16 +24,14 @@ const FeaturedProject = ({ title, summary, image, link, github }) => {
       <Link
         href={link}
         target="_blank"
-        className="w-1/2 cursor-pointer overflow-hidden rounded-lg"
-      >
+        className="w-1/2 cursor-pointer overflow-hidden rounded-lg">
         <Image src={image} alt={title} className="w-full h-auto " priority sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"/>
       </Link>
       <div className="w-1/2 flex flex-col items-start justify-between pl-6">
         <Link
           href={link}
           alt={title}
-          className="hover:underline underline-offset-2 text-lightGreen dark:text-mediumBlue"
-        >
+          className="hover:underline underline-offset-2 text-lightGreen dark:text-mediumBlue">
           <h2 className="my-2 w-full text-left text-4xl font-bold text-lightGreen dark:text-mediumBlue">
             {title}
           </h2>
@@ -48,8 +46,7 @@ const FeaturedProject = ({ title, summary, image, link, github }) => {
             alt={title}
             className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold border border-solid dark:border
                   hover:bg-light hover:text-dark hover:border-dark
-                   dark:bg-dark dark:text-light  dark:hover:bg-light dark:hover:border dark:border-light dark:hover:text-dark"
-          >
+                   dark:bg-dark dark:text-light  dark:hover:bg-light dark:hover:border dark:border-light dark:hover:text-dark">
             Visit Project
           </Link>
         </div>
@@ -73,8 +70,7 @@ const Project = ({ type, title, summary, image, link, github }) => {
           href={link}
           alt={title}
           target="_"
-          className="hover:underline underline-offset-2  text-lightGreen dark:text-mediumBlue"
-        >
+          className="hover:underline underline-offset-2  text-lightGreen dark:text-mediumBlue">
           <h2 className="my-2 w-full text-left text-3xl font-bold  text-lightGreen dark:text-mediumBlue ">
             {title}
           </h2>
@@ -85,8 +81,7 @@ const Project = ({ type, title, summary, image, link, github }) => {
             href={link}
             target="_"
             alt={title}
-            className="p-2 text-lg font-semibold underline"
-          >
+            className="p-2 text-lg font-semibold underline">
             Visit
           </Link>
           <Link href={github} alt={title} className="w-10" target="_">

@@ -18,7 +18,7 @@ const NavigationBar = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <header className="w-full px-32 py-8 font-semibold flex items-center text-large justify-between dark:text-light relative">
+    <header className="w-full px-32 py-8 font-semibold flex items-center text-large justify-between dark:text-light relative lg:px-8">
       <button
         className="flex-col justify-center items-center hidden lg:flex"
         onClick={handleMenuClick}
