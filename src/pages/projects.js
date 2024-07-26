@@ -6,14 +6,14 @@ import Link from "next/link";
 import Image from "next/image";
 import { GithubIcon } from "@/styles/icons";
 import useThemeSwitcher from "../components/hooks/useThemeSwitcher";
-import communitySideKicks from "../../public/project_screen_shots/Community Sidekicks.png";
-import appTrack from "../../public/project_screen_shots/App Track.PNG";
-import quoteGenerator from "../../public/project_screen_shots/project 1 screenshot.PNG";
-import budgetTracker from "../../public/project_screen_shots/budget tracker screenshot.PNG";
-import ORMImage from "../../public/project_screen_shots/command line image.PNG";
-import workoutProgress from "../../public/project_screen_shots/fitness tracker screenshot.PNG";
-import dayPlanner from "../../public/project_screen_shots/Workday scheduler screenShot.png";
-import noteTaker from "../../public/project_screen_shots/Note Taker screenshot.PNG";
+import communitySideKicks from "../../public/project_screen_shots/Community_Sidekicks.png";
+import appTrack from "../../public/project_screen_shots/App_Track.PNG";
+import quoteGenerator from "../../public/project_screen_shots/App_Track.PNG";
+import budgetTracker from "../../public/project_screen_shots/budget_tracker_screenshot.PNG";
+import ORMImage from "../../public/project_screen_shots/command _line_image.PNG";
+import workoutProgress from "../../public/project_screen_shots/fitness_tracker_screenshot.PNG";
+import dayPlanner from "../../public/project_screen_shots/Workday_scheduler_screenShot.png";
+import noteTaker from "../../public/project_screen_shots/Note_Taker_screenshot.PNG";
 import { motion, AnimatePresence, wrap } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
 
@@ -45,7 +45,6 @@ const AbraProjectImages = [
   "/project_screen_shots/Abra/mobile-opportunities.jpg",
   "/project_screen_shots/Abra/mobile-oportunityDetails.jpg",
   "/project_screen_shots/Abra/mobile-alerts.jpg",
-
 ];
 
 const swipeConfidenceThreshold = 10000;
