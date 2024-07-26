@@ -200,7 +200,7 @@ const projects = () => {
   return (
     <>
       <Head>
-        <title>Grace Reed | Projects </title>
+        <title>Grace Butler | Projects </title>
         <meta title="Projects" content="Projects Page" />
       </Head>
       <TransitionEffect/>

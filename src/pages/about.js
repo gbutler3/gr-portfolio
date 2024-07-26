@@ -37,7 +37,7 @@ const about = () => {
   return (
     <>
       <Head>
-        <title>Grace Reed | A Bit About Me</title>
+        <title>Grace Butler | A Bit About Me</title>
         <meta title="A Bit About Me" content="About Page" />
       </Head>
       <TransitionEffect/>
@@ -107,7 +107,7 @@ const about = () => {
               <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[102%] rounded-[2rem] bg-pink-700 dark:bg-mediumBlue" />
               <Image
                 src={secondaryProfileImage}
-                alt="Grace Reed"
+                alt="Grace Butler"
                 className="w-full h-auto rounded-2xl items-center"
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -119,7 +119,7 @@ const about = () => {
                 <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[102%] rounded-[2rem] bg-pink-700 dark:bg-mediumBlue " />
                 <Image
                   src={secondaryProfileImage}
-                  alt="Grace Reed"
+                  alt="Grace Butler"
                   className="w-full h-auto rounded-2xl items-center "
                   priority
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
