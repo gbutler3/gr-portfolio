@@ -12,7 +12,7 @@ import quoteGenerator from "../../public/project_screen_shots/App_Track.PNG";
 import budgetTracker from "../../public/project_screen_shots/budget_tracker_screenshot.PNG";
 import ORMImage from "../../public/project_screen_shots/command _line_image.PNG";
 import workoutProgress from "../../public/project_screen_shots/fitness_tracker_screenshot.PNG";
-import dayPlanner from "../../public/project_screen_shots/Workday_scheduler_screenShot.png";
+import dayPlanner from "../../public/project_screen_shots/Workday_scheduler_screenshot.png";
 import noteTaker from "../../public/project_screen_shots/Note_Taker_screenshot.PNG";
 import { motion, AnimatePresence, wrap } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
