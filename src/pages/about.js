@@ -53,7 +53,7 @@ const about = () => {
                 Professional Background
               </h2>
               <p className="font-medium  sm:text-base">
-                My journey in began with a solid educational foundation in
+                My journey began with a solid educational foundation in
                 Health Studies from Texas Woman’s University, where I graduated
                 summa cum laude in 2019. This academic background instilled in
                 me a strong analytical mindset and an appreciation for
