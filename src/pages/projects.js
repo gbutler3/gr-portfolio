@@ -249,7 +249,7 @@ const projects = () => {
               <Project
                 title={"Day Planner"}
                 summary={
-                  "Calendar Application in which users are able to input events, which are then saved to local storage. Utilizes Mom,ent.js for the date and time."
+                  "Calendar Application in which users are able to input events, which are then saved to local storage. Utilizes Moment.js for the date and time."
                 }
                 image={dayPlanner}
                 link={
@@ -290,7 +290,7 @@ const projects = () => {
               <Project
                 title={"Workout Progress"}
                 summary={
-                  "Track and view your fitness progress over time. Users input the exercies, reps, and weight of each workout."
+                  "Track and view your fitness progress over time. Users input the exercises, reps, and weight of each workout."
                 }
                 image={workoutProgress}
                 link={"https://blooming-sands-23937.herokuapp.com/"}
@@ -303,7 +303,7 @@ const projects = () => {
               <Project
                 title={"Quote Generator and Translator"}
                 summary={
-                  "Want to generate a quote? This application can do that for you, and even translate the quote into another language. Utilizex an API to generte the random quote and a second API is used to translate that quote into the user selected language."
+                  "Want to generate a quote? This application can do that for you, and can even translate the quote into another language. Utilizes an API to generate a random quote and a second API is used to translate that quote into the user selected language."
                 }
                 image={quoteGenerator}
                 link={"https://free-quotes-api.herokuapp.com/"}
@@ -314,7 +314,7 @@ const projects = () => {
               <Project
                 title={"Note Taker"}
                 summary={
-                  "Note Taker for any individual who has multiple tasks for meetins. Users are able to create, save and delete notes from this application."
+                  "Note Taker for any individual who has multiple tasks for meetings. Users are able to create, save and delete notes from this application."
                 }
                 image={noteTaker}
                 link={"https://obscure-thicket-67236.herokuapp.com/"}
