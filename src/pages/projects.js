@@ -8,7 +8,7 @@ import { GithubIcon } from "@/styles/icons";
 import useThemeSwitcher from "../components/hooks/useThemeSwitcher";
 import communitySideKicks from "../../public/project_screen_shots/Community_Sidekicks.png";
 import appTrack from "../../public/project_screen_shots/App_Track.PNG";
-import quoteGenerator from "../../public/project_screen_shots/App_Track.PNG";
+import quoteGenerator from "../../public/project_screen_shots/project _1_screenshot.PNG";
 import budgetTracker from "../../public/project_screen_shots/budget_tracker_screenshot.PNG";
 import ORMImage from "../../public/project_screen_shots/command _line_image.PNG";
 import workoutProgress from "../../public/project_screen_shots/fitness_tracker_screenshot.PNG";
