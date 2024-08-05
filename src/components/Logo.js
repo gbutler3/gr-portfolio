@@ -12,7 +12,7 @@ const Logo = () => {
         backgroundColor:["#BC6C25", "#DDA15E", "#CBEEF3", "#283618", "#BC6C25", "#DDA15E",  "#283618"],
         transition: { duration: '3', repeat: Infinity},
         scale: 1.3
-          }}>GR</MotionLink>
+          }}>GB</MotionLink>
     </div>
   )
 }
