@@ -13,8 +13,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Grace Butler | Home</title>
-        <meta title="Grace Butler | Home" content="Home Page" />
+        <title>Grace Reed | Home</title>
+        <meta title="Grace Reed | Home" content="Home Page" />
       </Head>
       <TransitionEffect/>
       <main className="flex items-center w-full min-h-screen dark:text-light sm:min-h-[80vh]">
@@ -41,7 +41,7 @@ export default function Home() {
               />
               <div className="flex items-center self-start mt-2 lg:self-center">
                 <Link
-                  href={"/Grace_Butler_Resume_2024.pdf"}
+                  href={"/Grace_Reed_Web_Dev_Resume_2024.pdf"}
                   target="_blank"
                   className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark dark:border
                    dark:bg-dark dark:text-light  dark:hover:bg-light dark:hover:border dark:border-light dark:hover:text-dark md:p-2 md:px-4 md:text-base"
