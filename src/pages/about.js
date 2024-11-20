@@ -55,7 +55,7 @@ const about = () => {
               <p className="font-medium  sm:text-base">
                 My journey began with a solid educational foundation in
                 Health Studies from Texas Woman’s University, where I graduated
-                summa cum laude in 2019. This academic background instilled in
+                magna cum laude in 2019. This academic background instilled in
                 me a strong analytical mindset and an appreciation for
                 meticulous problem-solving.
               </p>
